@@ -2,11 +2,12 @@ import { ChevronRight, Search, SlidersHorizontal } from "lucide-react";
 import Temple from "@/components/Temple";
 import AppDownload from "@/components/AppDownload";
 import Articles from "@/components/Articles";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 import Recommendations from "@/components/Recommendations";
 import WildLife from "@/components/Wildlife";
 import Header from "@/components/Header";
 import VaranasiBanner from "@/components/VaranasiBanner";
+
 export default function Landing() {
   return (
     <>
