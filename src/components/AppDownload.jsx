@@ -53,7 +53,6 @@ export default function AppDownload() {
       ref={sectionRef}
       className="relative overflow-hidden bg-gradient-to-br from-black to-gray-900 py-16 md:py-24"
     >
-     
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-orange-500/10 blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-red-500/10 blur-3xl"></div>
@@ -165,51 +164,47 @@ export default function AppDownload() {
               className="mt-10 flex flex-wrap gap-4"
               variants={containerVariants}
             >
-              <motion.a
-                href="#download-ios"
-                className="flex items-center gap-3 bg-white border border-gray-700 hover:border-gray-500 rounded-xl px-6 py-3 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/10 group"
-                variants={itemVariants}
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="text-white ">
+              <div className="flex gap-4 flex-wrap bg-black p-6 rounded-2xl">
+                <motion.a
+                  href="#download-ios"
+                  className="flex items-center gap-4 bg-white/5 border border-white/10 hover:border-white/20 rounded-2xl px-5 py-3 shadow-sm hover:shadow-md transition-all duration-300 group"
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                >
                   <img
                     src="https://www.traviez.com/apple.png"
                     alt="App Store"
+                    className="w-8 h-8 invert"
                   />
-                </div>
-                <div>
-                  <div className="text-xs text-gray-700 group-hover:text-gray-900">
-                    Download on the
+                  <div className="text-left text-white">
+                    <div className="text-xs opacity-80 group-hover:opacity-100">
+                      Download on the
+                    </div>
+                    <div className="font-semibold text-base">App Store</div>
                   </div>
-                  <div className="text-black font-semibold text-lg">
-                    App Store
-                  </div>
-                </div>
-              </motion.a>
+                </motion.a>
 
-              <motion.a
-                href="#download-android"
-                className="flex items-center gap-3 bg-black border border-gray-700 hover:border-gray-500 rounded-xl px-6 py-3 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/10 group"
-                variants={itemVariants}
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="text-black">
+                <motion.a
+                  href="#download-android"
+                  className="flex items-center gap-4 bg-white/5 border border-white/10 hover:border-white/20 rounded-2xl px-5 py-3 shadow-sm hover:shadow-md transition-all duration-300 group"
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                >
                   <img
                     src="https://www.traviez.com/google.png"
                     alt="Google Play"
+                    className="w-8 h-8"
                   />
-                </div>
-                <div>
-                  <div className="text-xs text-gray-400 group-hover:text-gray-300">
-                    GET IT ON
+                  <div className="text-left text-white">
+                    <div className="text-xs opacity-80 group-hover:acity-100">
+                      GET IT ON
+                    </div>
+                    <div className="font-semibold text-base">Google Play</div>
                   </div>
-                  <div className="text-white font-semibold text-lg">
-                    Google Play
-                  </div>
-                </div>
-              </motion.a>
+                </motion.a>
+              </div>
             </motion.div>
           </motion.div>
 
